@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Bebas Neue', cursive;
+    --ff-secondary: 'Montserrat', sans-serif;
+    --prim-color: rgb(255, 235, 59);
+}
+
+#nav {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: var(--prim-color);
+        font-family: var(--ff-primary);
+        .logo {
+            color: black;
+            text-shadow: 1px 1px 2px white;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 1.5em;
+    a {
+        color: black;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        padding: auto 10px;
+        text-shadow: 1px 1px 2px white;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.main {
+    background-image: url("/assets/imgs/IMG_4064.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+
+#about {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#bar {
+    background-color: #f5da42;
+}
+
+@media screen  and (max-width:1024px) {
+    .nav_links {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav_links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--prim-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav_links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+// Animation for link items to fade in/out
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform:  translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+.info {
+    font-family: var(--ff-secondary);
+    display: flex;
+    justify-content: space-around;
+
+    .comics {
+        max-width: 300px;
+        border-radius: 60px;
+    }
+
+    .sub {
+        max-width: 300px;
+        border-radius: 60px;
+    }
+
+    .bookstore {
+        max-width: 300px;
+        border-radius: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .info {
+        flex-direction: column;
+    }
+
+    div {
+        margin-bottom: 40px;
+    }
+}
+
+
+.footer {
+    background-color: var(--prim-color);
+    font-family: var(--ff-secondary);
+    padding: 20px 0;
+
+    .footer_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-weight: 300;
+    }
+
+    #copyright {
+        text-align: center;
+        font-size: .75em;
+    }
+}
