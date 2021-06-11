@@ -11,7 +11,7 @@
   --prim-color: rgb(255, 235, 59);
 }
 
-#nav nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,30 +25,41 @@
   font-family: var(--ff-primary);
 }
 
-#nav nav .logo {
+nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: black;
 }
 
-#nav nav .logo h2 {
+nav .logo h2 {
   margin-top: 7%;
   text-shadow: 1px 1px 2px white;
   letter-spacing: 2px;
 }
 
-#nav nav .logo .smiley {
+nav .logo .smiley {
   padding: 10px 20px;
 }
 
-.nav_links .links {
+nav .nav_links {
+  width: 20%;
+}
+
+nav .nav_links .links {
+  margin-top: 7%;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space;
-      -ms-flex-pack: space;
-          justify-content: space;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .nav_links .links a {
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px white;
 }
 
 .burger {
@@ -127,46 +138,6 @@
           transform: translateX(0%);
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-.toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
-}
-
 .info {
   font-family: var(--ff-secondary);
   display: -webkit-box;
@@ -174,6 +145,10 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.info p {
+  font-weight: 300;
 }
 
 .info .comics {

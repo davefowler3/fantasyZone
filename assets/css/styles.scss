@@ -10,46 +10,48 @@
     --prim-color: rgb(255, 235, 59);
 }
 
-#nav {
-    nav {
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--prim-color);
+    font-family: var(--ff-primary);
+    
+    .logo {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 8vh;
-        background-color: var(--prim-color);
-        font-family: var(--ff-primary);
-        .logo {
+        color: black;
+
+        h2 {
+            margin-top: 7%;
+            text-shadow: 1px 1px 2px white;
+            letter-spacing: 2px;
+        }
+
+        .smiley {
+            padding: 10px 20px;
+        }
+    }
+
+    .nav_links {
+        width: 20%;
+       
+        .links {
+            margin-top: 7%;
+            font-size: 1.5rem;
             display: flex;
-            color: black;
+            justify-content: space-around;
 
-            h2 {
-                margin-top: 7%;
+            a {
+                color: black;
+                text-decoration: none;
                 text-shadow: 1px 1px 2px white;
-                letter-spacing: 2px;
-            }
-
-            .smiley {
-                padding: 10px 20px;
             }
         }
     }
 }
 
-.nav_links {
-
-    .links {
-        display: flex;
-        justify-content: space;
-    }
-}
-// .nav_links {
-//         display: flex;
-//         justify-content: space-around;
-//     ul {
-//         margin-top: 2%;
-//         width: 30%;
-//         font-size: 1.5em;
-//     }
 
 //     a {
 //         color: black;
@@ -125,36 +127,15 @@
 }
 
 
-// Animation for link items to fade in/out
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform:  translateX(0px);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-
 
 .info {
     font-family: var(--ff-secondary);
     display: flex;
     justify-content: space-around;
+
+    p {
+        font-weight: 300;
+    }
 
     .comics {
         width: 200px;
@@ -203,6 +184,4 @@
         text-align: center;
         font-size: 1em;
     }
-
-
 }
