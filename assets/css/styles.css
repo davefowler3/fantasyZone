@@ -42,11 +42,8 @@ nav .logo .smiley {
   padding: 10px 20px;
 }
 
-nav .nav_links {
+nav ul {
   width: 20%;
-}
-
-nav .nav_links .links {
   margin-top: 7%;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -56,29 +53,48 @@ nav .nav_links .links {
       justify-content: space-around;
 }
 
-nav .nav_links .links a {
+nav ul a {
   color: black;
   text-decoration: none;
   text-shadow: 1px 1px 2px white;
 }
 
-.burger {
+.hamburger {
   display: none;
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+@media screen and (max-width: 960px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .logo {
+    display: none;
+  }
+  ul.show {
+    display: block;
+  }
 }
 
 .main {
   background-image: url("/assets/imgs/IMG_4064.jpg");
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    height: 50vh;
+  }
 }
 
 #about {
@@ -90,56 +106,8 @@ nav .nav_links .links a {
   background-color: #f5da42;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav_links {
-    width: 35%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav_links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: var(--prim-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-  }
-  .nav_links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-}
-
-.nav-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
-.info {
-  font-family: var(--ff-secondary);
+.about {
+  background-color: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,36 +115,63 @@ nav .nav_links .links a {
       justify-content: space-around;
 }
 
-.info p {
+.about .info {
+  padding: 40px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: yellow;
+  font-family: var(--ff-secondary);
+}
+
+.about .info p {
   font-weight: 300;
 }
 
-.info .comics {
+.about .info .comics {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.info .sub {
+.about .info .sub {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.info .bookstore {
+.about .info .bookstore {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .info {
+.about .info .wish {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about .info .appraisal {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1000px) {
+  .about .about {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .about .info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div {
+  .about div {
     margin-bottom: 40px;
   }
 }

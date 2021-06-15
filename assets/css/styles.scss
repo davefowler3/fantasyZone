@@ -19,6 +19,7 @@ nav {
     background-color: var(--prim-color);
     font-family: var(--ff-primary);
     
+
     .logo {
         display: flex;
         color: black;
@@ -34,51 +35,62 @@ nav {
         }
     }
 
-    .nav_links {
+    ul {
         width: 20%;
-       
-        .links {
-            margin-top: 7%;
-            font-size: 1.5rem;
-            display: flex;
-            justify-content: space-around;
+        margin-top: 7%;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-around;
 
-            a {
-                color: black;
-                text-decoration: none;
-                text-shadow: 1px 1px 2px white;
-            }
+        a {
+            color: black;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px white;
         }
     }
 }
 
-
-//     a {
-//         color: black;
-//         text-decoration: none;
-//         letter-spacing: 3px;
-//         font-weight: bold;
-//         padding: auto 10px;
-//         text-shadow: 1px 1px 2px white;
-//     }
-// }
-
-.burger {
+.hamburger {
     display: none;
 }
 
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    transition: all 0.3s ease;
+@media screen and (max-width: 960px) {
+    .hamburger {
+       display: block;
+       border: 0;
+       background-color: transparent;
+       color: black;
+       font-size: 20px;
+       margin: 20px;
+       align-self: flex-end;
+    }
+
+    nav {
+
+        ul {
+            display: none;
+        }
+
+        .logo {
+            display: none;
+        }
+    }
+
+    ul.show {
+        display: block;
+    }
 }
 
 .main {
     background-image: url("/assets/imgs/IMG_4064.jpg");
     background-size: cover;
-    height: 70vh;
+    height: 50vh;
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+       height: 50vh;
+    }
 }
 
 #about {
@@ -90,82 +102,71 @@ nav {
     background-color: #f5da42;
 }
 
-@media screen  and (max-width:1024px) {
-    .nav_links {
-        width: 35%;
-    }
-}
 
-@media screen and (max-width:768px) {
-    body{
-        overflow-x: hidden;
-    }
-    .nav_links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: var(--prim-color);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav_links li {
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-
-
-.info {
-    font-family: var(--ff-secondary);
+.about {
+    background-color: pink;
     display: flex;
     justify-content: space-around;
 
-    p {
-        font-weight: 300;
-    }
-
-    .comics {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-
-    .sub {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-
-    .bookstore {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-}
-
-@media screen and (max-width:768px) {
     .info {
-        flex-direction: column;
+        padding: 40px 60px;
+        display: flex;
+        background-color: yellow;
+        font-family: var(--ff-secondary);
+        
+    
+        p {
+            font-weight: 300;
+        }
+    
+        .comics {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    
+        .sub {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    
+        .bookstore {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .wish {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .appraisal {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
     }
 
-    div {
-        margin-bottom: 40px;
+    @media screen and (min-width: 1000px) {
+        .about {
+           padding: 0;
+        }
+    }
+
+
+    @media screen and (max-width:980px) {
+        .info {
+            flex-direction: column;
+        }
+    
+        div {
+            margin-bottom: 40px;
+        }
     }
 }
-
 
 .footer {
     background-color: var(--prim-color);
