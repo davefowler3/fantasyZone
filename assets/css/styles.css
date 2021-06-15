@@ -15,36 +15,19 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 8vh;
   background-color: var(--prim-color);
   font-family: var(--ff-primary);
 }
 
-nav .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: black;
-}
-
-nav .logo h2 {
-  margin-top: 7%;
-  text-shadow: 1px 1px 2px white;
-  letter-spacing: 2px;
-}
-
-nav .logo .smiley {
-  padding: 10px 20px;
-}
-
 nav ul {
-  width: 20%;
-  margin-top: 7%;
+  margin-top: 30px;
+  width: 30%;
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +42,24 @@ nav ul a {
   text-shadow: 1px 1px 2px white;
 }
 
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo .smiley {
+  max-width: 400px;
+  margin: 20px;
+  color: black;
+}
+
+nav .logo h2 {
+  margin-top: 40px;
+  text-shadow: 1px 1px 2px white;
+  letter-spacing: 2px;
+}
+
 .hamburger {
   display: none;
 }
@@ -66,22 +67,39 @@ nav ul a {
 @media screen and (max-width: 960px) {
   .hamburger {
     display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     border: 0;
     background-color: transparent;
     color: black;
     font-size: 20px;
     margin: 20px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   nav ul {
     display: none;
+    margin: 0;
+    font-size: 2.5rem;
   }
   nav .logo {
     display: none;
   }
   ul.show {
     display: block;
+    font-size: 3.5rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 50px 40px;
   }
 }
 
