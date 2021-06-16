@@ -126,13 +126,9 @@ nav .logo h2 {
   }
 }
 
-#about {
-  padding: 7% 15%;
-  text-align: center;
-}
-
 .about {
-  background-color: pink;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 .about .info {
@@ -141,42 +137,17 @@ nav .logo h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 40px 60px;
-  background-color: yellow;
   font-family: var(--ff-secondary);
 }
 
 .about .info p {
+  font-size: .75rem;
   font-weight: 300;
 }
 
-.about .info .comics {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.about .info .sub {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.about .info .bookstore {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.about .info .wish {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.about .info .appraisal {
-  width: 200px;
-  height: 200px;
+.about .info .image {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -192,6 +163,16 @@ nav .logo h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about .info h5 {
+    font-size: 2rem;
+  }
+  .about .info p {
+    font-size: 1rem;
+  }
+  .about .info .image {
+    width: 300px;
+    height: 300px;
   }
   .about div {
     margin-bottom: 40px;

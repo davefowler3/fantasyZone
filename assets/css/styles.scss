@@ -111,54 +111,24 @@ nav {
     }
 }
 
-#about {
-    padding: 7% 15%;
-    text-align: center;
-}
-
-
 .about {
-    background-color: pink;
+    text-align: center;
+    padding: 50px 20px;
 
     .info {
         display: flex;
         justify-content: space-around;
-        padding: 40px 60px;
-        background-color: yellow;
         font-family: var(--ff-secondary);
         
     
         p {
+            font-size: .75rem;
             font-weight: 300;
         }
     
-        .comics {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-    
-        .sub {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-    
-        .bookstore {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-
-        .wish {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-
-        .appraisal {
-            width: 200px;
-            height: 200px;
+        .image {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
         }
     }
@@ -173,6 +143,19 @@ nav {
     @media screen and (max-width:980px) {
         .info {
             flex-direction: column;
+
+            h5 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .image {
+                width: 300px;
+                height: 300px;
+            }
         }
     
         div {
