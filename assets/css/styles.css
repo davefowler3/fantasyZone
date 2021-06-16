@@ -127,6 +127,9 @@ nav .logo h2 {
 }
 
 .about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(rgba(255, 255, 0, 0.5))), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(255, 255, 0, 0.5)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-size: cover;
   text-align: center;
   padding: 50px 20px;
 }
@@ -138,9 +141,12 @@ nav .logo h2 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-family: var(--ff-secondary);
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 .about .info p {
+  color: white;
   font-size: .75rem;
   font-weight: 300;
 }
