@@ -7,6 +7,7 @@
 :root {
     --ff-primary: 'Bebas Neue', cursive;
     --ff-secondary: 'Montserrat', sans-serif;
+    --ff-three: 'Staatliches', cursive;
     --prim-color: rgb(255, 235, 59);
 }
 
@@ -46,14 +47,24 @@ nav {
             text-shadow: 1px 1px 2px white;
             letter-spacing: 2px;
         }
-     }
+    }
+}
+
+.slogan {
+    background-color: black;
+    font-family: var(--ff-three);
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 5px;
+    margin: 0;
 }
 
 .hamburger {
     display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 760px) {
     .hamburger {
        display: block;
        align-self: flex-end;
@@ -96,7 +107,7 @@ nav {
 
 @media screen and (min-width: 1000px) {
     .main {
-       height: 50vh;
+       height: 70vh;
     }
 }
 
@@ -105,19 +116,14 @@ nav {
     text-align: center;
 }
 
-#bar {
-    background-color: #f5da42;
-}
-
 
 .about {
     background-color: pink;
-    display: flex;
-    justify-content: space-around;
 
     .info {
-        padding: 40px 60px;
         display: flex;
+        justify-content: space-around;
+        padding: 40px 60px;
         background-color: yellow;
         font-family: var(--ff-secondary);
         
