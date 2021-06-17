@@ -127,8 +127,8 @@ nav .logo h2 {
 }
 
 .about {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(rgba(255, 255, 0, 0.5))), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
-  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(255, 255, 0, 0.5)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(#ffeb3b)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), #ffeb3b), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
   background-size: cover;
   text-align: center;
   padding: 50px 20px;
@@ -155,6 +155,8 @@ nav .logo h2 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 1000px) {
