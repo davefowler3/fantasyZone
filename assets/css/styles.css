@@ -40,7 +40,6 @@ nav ul {
 nav ul a {
   color: black;
   text-decoration: none;
-  text-shadow: 1px 1px 2px white;
 }
 
 nav .logo {
@@ -127,8 +126,8 @@ nav .logo h2 {
 }
 
 .about {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(#ffeb3b)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
-  background-image: linear-gradient(rgba(0, 0, 100, 0.5), #ffeb3b), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(#ffb118)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), #ffb118), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
   background-size: cover;
   text-align: center;
   padding: 50px 20px;
