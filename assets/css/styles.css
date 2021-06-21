@@ -169,9 +169,7 @@ nav .logo h2 {
 }
 
 .about {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 94, 247, 0.1)), to(#1346a3)), url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
-  background-image: linear-gradient(rgba(94, 94, 247, 0.1), #1346a3), url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
-  background-size: cover;
+  background-color: white;
   text-align: center;
   padding: 50px 20px;
 }
@@ -185,15 +183,16 @@ nav .logo h2 {
   font-family: var(--ff-secondary);
   height: 40vh;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .about .info h4 {
   font-family: var(--ff-primary);
-  color: var(--prim-color);
+  color: black;
 }
 
 .about .info p {
-  color: white;
+  color: black;
   font-size: .75rem;
   font-weight: 300;
 }

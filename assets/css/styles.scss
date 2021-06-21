@@ -162,9 +162,10 @@ nav {
 }
 
 .about {
-    background-image: linear-gradient(rgba(94, 94, 247, 0.1), rgb(19, 70, 163)),
-                       url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
-    background-size: cover;
+    // background-image: linear-gradient(rgba(94, 94, 247, 0.1), rgb(19, 70, 163)),
+    //                    url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
+    // background-size: cover;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 50px 20px;
 
@@ -175,15 +176,16 @@ nav {
         // text-shadow: 1px 1px 2px black;
         height: 40vh;
         padding-top: 40px;
+        padding-bottom: 20px;
 
         h4 {
             font-family: var(--ff-primary);
-            color: var(--prim-color);
+            color: black;
         }
         
     
         p {
-            color: white;
+            color: black;
             font-size: .75rem;
             font-weight: 300;
         }
