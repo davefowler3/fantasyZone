@@ -32,11 +32,14 @@ nav {
             text-decoration: none;
             // text-shadow: 1px 1px 2px white;
         }
+
+        a:hover {
+            color: white;
+        }
     }
 
     .logo {
         display: flex;
-        
         
         .smiley {
             max-width: 400px;
@@ -53,17 +56,46 @@ nav {
     }
 }
 
-.subscribe {
-    background-color: #3f82fd;
-    padding: 5px;
+
+.lame-sm {
+    background-color: var(--prim-color);
+    padding-bottom: 5px;
     margin: 0;
+
+    h4 {
+        justify-content: center;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        .logo {
+            h2 {
+                padding-top: 5px;
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    .lame-sm {
+        text-align: center;
+        padding-top: 10px;
+        
+        h4 {
+            font-family: var(--ff-secondary);
+            color: black;
+            font-weight: 900;
+            visibility: visible;
+        }
+    }
 }
 
 .hamburger {
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .hamburger {
        display: block;
        align-self: flex-end;
@@ -101,11 +133,11 @@ nav {
 .main {
     background-image: url("/assets/imgs/IMG_4064.jpg");
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
 
     .lame {
         position: absolute;
-        top: 220px;
+        top: 30%;
         right: 70px;
         transform: rotate(-10deg);
         font-size: 6rem;
@@ -118,9 +150,13 @@ nav {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 768px) {
     .main {
-       height: 70vh;
+        height: 50vh;
+    }
+
+    .lame {
+        display: none;
     }
 }
 
@@ -135,10 +171,14 @@ nav {
         display: flex;
         justify-content: space-around;
         font-family: var(--ff-secondary);
-        color: white;
-        text-shadow: 1px 1px 2px black;
+        color: black;
+        // text-shadow: 1px 1px 2px black;
         height: 40vh;
         padding-top: 40px;
+
+        h5 {
+            font-family: var(--ff-primary);
+        }
         
     
         p {
@@ -165,6 +205,7 @@ nav {
     @media screen and (max-width:980px) {
         .info {
             flex-direction: column;
+            height: auto;
 
             h5 {
                 font-size: 2rem;

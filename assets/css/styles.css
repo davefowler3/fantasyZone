@@ -43,6 +43,10 @@ nav ul a {
   text-decoration: none;
 }
 
+nav ul a:hover {
+  color: white;
+}
+
 nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,17 +65,41 @@ nav .logo h2 {
   color: black;
 }
 
-.subscribe {
-  background-color: #3f82fd;
-  padding: 5px;
+.lame-sm {
+  background-color: var(--prim-color);
+  padding-bottom: 5px;
   margin: 0;
+}
+
+.lame-sm h4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo h2 {
+    padding-top: 5px;
+    font-size: 2.8rem;
+  }
+  .lame-sm {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .lame-sm h4 {
+    font-family: var(--ff-secondary);
+    color: black;
+    font-weight: 900;
+    visibility: visible;
+  }
 }
 
 .hamburger {
   display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .hamburger {
     display: block;
     -ms-flex-item-align: end;
@@ -113,12 +141,12 @@ nav .logo h2 {
 .main {
   background-image: url("/assets/imgs/IMG_4064.jpg");
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
 }
 
 .main .lame {
   position: absolute;
-  top: 220px;
+  top: 30%;
   right: 70px;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
@@ -131,9 +159,12 @@ nav .logo h2 {
   letter-spacing: -5px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 768px) {
   .main {
-    height: 70vh;
+    height: 50vh;
+  }
+  .lame {
+    display: none;
   }
 }
 
@@ -152,10 +183,13 @@ nav .logo h2 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-family: var(--ff-secondary);
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  color: black;
   height: 40vh;
   padding-top: 40px;
+}
+
+.about .info h5 {
+  font-family: var(--ff-primary);
 }
 
 .about .info p {
@@ -184,6 +218,7 @@ nav .logo h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
   .about .info h5 {
     font-size: 2rem;
