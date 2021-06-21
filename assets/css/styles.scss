@@ -131,7 +131,8 @@ nav {
 }
 
 .main {
-    background-image: url("/assets/imgs/IMG_4064.jpg");
+    background-image: linear-gradient(117deg, rgba(212, 212, 248, 0.1), rgba(0, 0, 0, 0.5)), 
+                       url("/assets/imgs/IMG_4064.jpg");
     background-size: cover;
     height: 70vh;
 
@@ -145,7 +146,7 @@ nav {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         color: white;
-        text-shadow: 5px 4px 3px rgb(0, 0, 0);
+        text-shadow: 5px 14px 13px rgb(0, 0, 0);
         letter-spacing: -5px;
     }
 }
@@ -161,8 +162,8 @@ nav {
 }
 
 .about {
-    background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(63, 130, 253, 1)),
-                       url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+    background-image: linear-gradient(rgba(94, 94, 247, 0.1), rgb(19, 70, 163)),
+                       url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
     background-size: cover;
     text-align: center;
     padding: 50px 20px;
@@ -171,13 +172,13 @@ nav {
         display: flex;
         justify-content: space-around;
         font-family: var(--ff-secondary);
-        color: black;
         // text-shadow: 1px 1px 2px black;
         height: 40vh;
         padding-top: 40px;
 
-        h5 {
+        h4 {
             font-family: var(--ff-primary);
+            color: var(--prim-color);
         }
         
     
@@ -188,10 +189,11 @@ nav {
         }
     
         .image {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
+            margin-bottom: 20px;
         }
     }
 
