@@ -182,8 +182,8 @@ nav .logo h2 {
       justify-content: space-around;
   font-family: var(--ff-secondary);
   height: 40vh;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .about .info h4 {
