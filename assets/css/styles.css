@@ -8,8 +8,9 @@
 :root {
   --ff-primary: 'Bebas Neue', cursive;
   --ff-secondary: 'Montserrat', sans-serif;
-  --ff-three: 'Staatliches', cursive;
-  --prim-color: #FFB118;
+  --ff-third: 'Poppins', sans-serif;
+  --ff-fourth: 'Staatliches', cursive;
+  --prim-color: #01f5e1;
 }
 
 nav {
@@ -51,21 +52,17 @@ nav .logo {
 nav .logo .smiley {
   max-width: 400px;
   margin: 20px;
-  color: black;
 }
 
 nav .logo h2 {
-  margin-top: 40px;
-  text-shadow: 1px 1px 2px white;
-  letter-spacing: 2px;
+  margin-top: 5%;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: black;
 }
 
-.slogan {
-  background-color: black;
-  font-family: var(--ff-three);
-  text-align: center;
-  font-size: 2rem;
-  color: white;
+.subscribe {
+  background-color: #3f82fd;
   padding: 5px;
   margin: 0;
 }
@@ -119,6 +116,21 @@ nav .logo h2 {
   height: 50vh;
 }
 
+.main .lame {
+  position: absolute;
+  top: 220px;
+  right: 70px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  font-size: 6rem;
+  line-height: 74px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-shadow: 5px 4px 3px black;
+  letter-spacing: -5px;
+}
+
 @media screen and (min-width: 1000px) {
   .main {
     height: 70vh;
@@ -126,8 +138,8 @@ nav .logo h2 {
 }
 
 .about {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(#ffb118)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
-  background-image: linear-gradient(rgba(0, 0, 100, 0.5), #ffb118), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 100, 0.5)), to(#3f82fd)), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), #3f82fd), url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
   background-size: cover;
   text-align: center;
   padding: 50px 20px;
@@ -142,6 +154,8 @@ nav .logo h2 {
   font-family: var(--ff-secondary);
   color: white;
   text-shadow: 1px 1px 2px black;
+  height: 40vh;
+  padding-top: 40px;
 }
 
 .about .info p {

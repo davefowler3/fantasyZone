@@ -7,8 +7,9 @@
 :root {
     --ff-primary: 'Bebas Neue', cursive;
     --ff-secondary: 'Montserrat', sans-serif;
-    --ff-three: 'Staatliches', cursive;
-    --prim-color: #FFB118;
+    --ff-third: 'Poppins', sans-serif;
+    --ff-fourth: 'Staatliches', cursive;
+    --prim-color: #01f5e1;
 }
 
 
@@ -36,26 +37,24 @@ nav {
     .logo {
         display: flex;
         
+        
         .smiley {
             max-width: 400px;
             margin: 20px;
-            color: black;
         }
     
         h2 {
-            margin-top: 40px;
-            text-shadow: 1px 1px 2px white;
-            letter-spacing: 2px;
+            margin-top: 5%;
+            // text-shadow: 1px 1px 2px black;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: black;
         }
     }
 }
 
-.slogan {
-    background-color: black;
-    font-family: var(--ff-three);
-    text-align: center;
-    font-size: 2rem;
-    color: white;
+.subscribe {
+    background-color: #3f82fd;
     padding: 5px;
     margin: 0;
 }
@@ -103,6 +102,20 @@ nav {
     background-image: url("/assets/imgs/IMG_4064.jpg");
     background-size: cover;
     height: 50vh;
+
+    .lame {
+        position: absolute;
+        top: 220px;
+        right: 70px;
+        transform: rotate(-10deg);
+        font-size: 6rem;
+        line-height: 74px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: white;
+        text-shadow: 5px 4px 3px rgb(0, 0, 0);
+        letter-spacing: -5px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -112,7 +125,7 @@ nav {
 }
 
 .about {
-    background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(255, 177, 24, 1)),
+    background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(63, 130, 253, 1)),
                        url("/assets/imgs/joel-muniz-IBo4uc9WInc-unsplash.jpg");
     background-size: cover;
     text-align: center;
@@ -124,6 +137,8 @@ nav {
         font-family: var(--ff-secondary);
         color: white;
         text-shadow: 1px 1px 2px black;
+        height: 40vh;
+        padding-top: 40px;
         
     
         p {
