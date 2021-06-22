@@ -65,7 +65,6 @@ nav {
     }
 }
 
-
 .lame-sm {
     background-color: var(--prim-color);
     padding-bottom: 5px;
@@ -171,9 +170,6 @@ nav {
 }
 
 .info {
-    // background-image: linear-gradient(rgba(94, 94, 247, 0.1), rgb(19, 70, 163)),
-    //                    url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
-    // background-size: cover;
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 50px 20px;
@@ -182,8 +178,6 @@ nav {
         display: flex;
         justify-content: space-around;
         font-family: var(--ff-secondary);
-        // text-shadow: 1px 1px 2px black;
-        
         padding-top: 2%;
         padding-bottom: 2%;
 
@@ -192,7 +186,6 @@ nav {
             color: black;
         }
         
-    
         p {
             color: black;
             font-size: .75rem;
@@ -213,7 +206,6 @@ nav {
            padding: 0;
         }
     }
-
 
     @media screen and (max-width:980px) {
         .info {
@@ -247,7 +239,6 @@ nav {
 
     .bio {
         font-family: var(--ff-primary);
-      
 
         h3 {
             color: white;
