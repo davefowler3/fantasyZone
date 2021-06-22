@@ -55,7 +55,7 @@ nav {
             }
     
             h5 {
-                margin-top: -4%;
+                margin-top: -2%;
                 margin-left: 80%;
                 font-size: 1.1rem;
                 padding-top: 0%;
@@ -182,6 +182,7 @@ nav {
         padding-bottom: 2%;
 
         h4 {
+            font-size: 2rem;
             font-family: var(--ff-primary);
             color: black;
         }
@@ -190,6 +191,7 @@ nav {
             color: black;
             font-size: .75rem;
             font-weight: 300;
+            margin-bottom: 15px;
         }
     
         .image {
@@ -234,23 +236,30 @@ nav {
 
 .about {
     display: flex;
-    background-color: rgb(55, 103, 156);
+    background-color: var(--prim-color);
     justify-content: space-around;
 
     .bio {
         font-family: var(--ff-primary);
 
-        h3 {
-            color: white;
+        h2 {
+            padding-top: 20px;
+            color: black;
+            font-size: 3rem;
+        }
+
+        p {
+            font-family: var(--ff-third);
+            font-weight: 100;
         }
     }
 
-    .about-img {
+    .img-container {
         background-color: pink;
 
         img {
         max-width: 100%;
-        max-height: 400px;
+        max-height: 420px;
         object-fit: contain;
         }
     }
@@ -266,6 +275,24 @@ nav {
     }
 }
 
+.contact {
+    font-family: var(--ff-primary);
+
+    .contact-us {
+        text-align: center;
+        justify-content: center;
+
+        h4 {
+            font-size: 3rem;
+        }
+
+        form {
+            max-width: 40%;
+            background-color: pink;
+            padding: 20px;
+        }
+    }
+}
 .footer {
     background-color: var(--prim-color);
     font-family: var(--ff-secondary);

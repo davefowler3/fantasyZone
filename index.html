@@ -99,10 +99,10 @@
     <!-- About  -->
     <section class="about">
         <div class="bio">
-            <h3>About Us</h3>
+            <h2>About Us</h2>
             <p>Shop bio goes here.</p>
         </div>
-        <div class="about-img">
+        <div class="img-container">
             <img src="assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg">
         </div>
     </section>
@@ -111,8 +111,28 @@
     <section class="contact">
         <div class="contact-us">
             <h4>Contact Us</h4>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                 <li>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <label for="mail">E-mail:</label>
+                   <input type="email" id="mail" name="user_email">
+                 </li>
+                 <li>
+                   <label for="msg">Message:</label>
+                   <textarea id="msg" name="user_message"></textarea>
+                 </li>
+                 <li class="button">
+                    <button type="submit">Send your message</button>
+                 </li>
+                </ul>
+            </form>
         </div>
     </section>
+
     <!-- Footer -->
     <section class="footer" id="footer">
         <div class="footer_content">
@@ -149,5 +169,4 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
         </script>
 </body>
-
 </html>

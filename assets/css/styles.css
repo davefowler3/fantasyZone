@@ -67,7 +67,7 @@ nav .logo .logo-text h2 {
 }
 
 nav .logo .logo-text h5 {
-  margin-top: -4%;
+  margin-top: -2%;
   margin-left: 80%;
   font-size: 1.1rem;
   padding-top: 0%;
@@ -195,6 +195,7 @@ nav .logo .logo-text h5 {
 }
 
 .info .info h4 {
+  font-size: 2rem;
   font-family: var(--ff-primary);
   color: black;
 }
@@ -203,6 +204,7 @@ nav .logo .logo-text h5 {
   color: black;
   font-size: .75rem;
   font-weight: 300;
+  margin-bottom: 15px;
 }
 
 .info .info .image {
@@ -247,7 +249,7 @@ nav .logo .logo-text h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #37679c;
+  background-color: var(--prim-color);
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -256,17 +258,24 @@ nav .logo .logo-text h5 {
   font-family: var(--ff-primary);
 }
 
-.about .bio h3 {
-  color: white;
+.about .bio h2 {
+  padding-top: 20px;
+  color: black;
+  font-size: 3rem;
 }
 
-.about .about-img {
+.about .bio p {
+  font-family: var(--ff-third);
+  font-weight: 100;
+}
+
+.about .img-container {
   background-color: pink;
 }
 
-.about .about-img img {
+.about .img-container img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 420px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -281,6 +290,27 @@ nav .logo .logo-text h5 {
   .about .about-img {
     max-width: 100%;
   }
+}
+
+.contact {
+  font-family: var(--ff-primary);
+}
+
+.contact .contact-us {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-us h4 {
+  font-size: 3rem;
+}
+
+.contact .contact-us form {
+  max-width: 40%;
+  background-color: pink;
+  padding: 20px;
 }
 
 .footer {
