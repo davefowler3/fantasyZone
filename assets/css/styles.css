@@ -58,11 +58,20 @@ nav .logo .smiley {
   margin: 20px;
 }
 
-nav .logo h2 {
-  margin-top: 5%;
+nav .logo .logo-text h2 {
+  margin-top: 3%;
   font-size: 3.5rem;
   font-weight: 700;
   color: black;
+  margin-bottom: 0;
+}
+
+nav .logo .logo-text h5 {
+  margin-top: -4%;
+  margin-left: 80%;
+  font-size: 1.1rem;
+  padding-top: 0%;
+  text-align: end;
 }
 
 .lame-sm {
@@ -85,7 +94,7 @@ nav .logo h2 {
   }
   .lame-sm {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .lame-sm h4 {
     font-family: var(--ff-secondary);
@@ -168,36 +177,36 @@ nav .logo h2 {
   }
 }
 
-.about {
+.info {
   background-color: white;
   text-align: center;
   padding: 50px 20px;
 }
 
-.about .info {
+.info .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-family: var(--ff-secondary);
-  height: 40vh;
+  height: 30vh;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-.about .info h4 {
+.info .info h4 {
   font-family: var(--ff-primary);
   color: black;
 }
 
-.about .info p {
+.info .info p {
   color: black;
   font-size: .75rem;
   font-weight: 300;
 }
 
-.about .info .image {
+.info .info .image {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -207,31 +216,71 @@ nav .logo h2 {
 }
 
 @media screen and (min-width: 1000px) {
-  .about .about {
+  .info .info {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 980px) {
-  .about .info {
+  .info .info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
   }
-  .about .info h5 {
+  .info .info h5 {
     font-size: 2rem;
   }
-  .about .info p {
+  .info .info p {
     font-size: 1rem;
   }
-  .about .info .image {
+  .info .info .image {
     width: 300px;
     height: 300px;
   }
-  .about div {
+  .info div {
     margin-bottom: 40px;
+  }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #37679c;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .bio {
+  font-family: var(--ff-primary);
+}
+
+.about .bio h3 {
+  color: white;
+}
+
+.about .about-img {
+  background-color: pink;
+}
+
+.about .about-img img {
+  max-width: 100%;
+  max-height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 968px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .about-img {
+    max-width: 100%;
   }
 }
 

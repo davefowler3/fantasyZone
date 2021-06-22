@@ -12,7 +12,6 @@
     --prim-color: #01f5e1;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -30,7 +29,6 @@ nav {
         a {
             color: black;
             text-decoration: none;
-            // text-shadow: 1px 1px 2px white;
         }
 
         a:hover {
@@ -45,13 +43,24 @@ nav {
             max-width: 400px;
             margin: 20px;
         }
+
+        .logo-text {
+           
+            h2 {
+                margin-top: 3%;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: black;
+                margin-bottom: 0;
+            }
     
-        h2 {
-            margin-top: 5%;
-            // text-shadow: 1px 1px 2px black;
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: black;
+            h5 {
+                margin-top: -4%;
+                margin-left: 80%;
+                font-size: 1.1rem;
+                padding-top: 0%;
+                text-align: end;
+            }
         }
     }
 }
@@ -80,7 +89,7 @@ nav {
 
     .lame-sm {
         text-align: center;
-        padding-top: 10px;
+        padding-top: 5px;
         
         h4 {
             font-family: var(--ff-secondary);
@@ -161,7 +170,7 @@ nav {
     }
 }
 
-.about {
+.info {
     // background-image: linear-gradient(rgba(94, 94, 247, 0.1), rgb(19, 70, 163)),
     //                    url("/assets/imgs/brett-jordan-nRWvT3z5Dnc-unsplash.jpg");
     // background-size: cover;
@@ -174,7 +183,7 @@ nav {
         justify-content: space-around;
         font-family: var(--ff-secondary);
         // text-shadow: 1px 1px 2px black;
-        height: 40vh;
+        height: 30vh;
         padding-top: 2%;
         padding-bottom: 2%;
 
@@ -200,7 +209,7 @@ nav {
     }
 
     @media screen and (min-width: 1000px) {
-        .about {
+        .info {
            padding: 0;
         }
     }
@@ -227,6 +236,41 @@ nav {
     
         div {
             margin-bottom: 40px;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    background-color: rgb(55, 103, 156);
+    justify-content: space-around;
+
+    .bio {
+        font-family: var(--ff-primary);
+      
+
+        h3 {
+            color: white;
+        }
+    }
+
+    .about-img {
+        background-color: pink;
+
+        img {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        }
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .about {
+        flex-direction: column;
+
+        .about-img {
+            max-width: 100%;
         }
     }
 }
