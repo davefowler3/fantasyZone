@@ -190,7 +190,6 @@ nav .logo .logo-text h5 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-family: var(--ff-secondary);
-  height: 30vh;
   padding-top: 2%;
   padding-bottom: 2%;
 }
