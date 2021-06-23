@@ -49,8 +49,8 @@
             </div>
             <ul id="nav-list">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars fa-2x"></i>
@@ -85,19 +85,19 @@
             </div>
             <div>
                 <h4>Used Books</h4>
-                <p>Browse over 5,000 used titles!</p>
+                <p>Browse over 5,000 used titles of all genres!</p>
                 <img class="image" src="assets/imgs/bookstore.jpg" alt="Booksstore Photo by Element5 Digital from Pexels">
             </div>
             <div>
                 <h4>Appraisals</h4>
-                <p>Browse over 5,000 used titles!</p>
+                <p>On the spot value appraisals!</p>
                 <img class="image" src="assets/imgs/jonathan-cooper-zMkB6Nor64s-unsplash.jpg" alt="Comicbooks Photo by Erik McLean">
             </div>
         </div>
     </section>
 
     <!-- About  -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="bio">
             <h2>About Us</h2>
             <p>Shop bio goes here.</p>
@@ -108,10 +108,10 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-us">
             <h4>Contact Us</h4>
-            <form action="/my-handling-form-page" method="post">
+            <form action="/form" method="post">
                 <ul>
                  <li>
                    <label for="name">Name:</label>
@@ -126,7 +126,7 @@
                    <textarea id="msg" name="user_message"></textarea>
                  </li>
                  <li class="button">
-                    <button type="submit">Send your message</button>
+                    <button type="submit">Submit</button>
                  </li>
                 </ul>
             </form>

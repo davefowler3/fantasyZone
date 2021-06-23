@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -293,24 +294,75 @@ nav .logo .logo-text h5 {
 }
 
 .contact {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-third);
 }
 
 .contact .contact-us {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .contact-us h4 {
   font-size: 3rem;
+  padding-top: 20px;
+  font-family: var(--ff-primary);
 }
 
 .contact .contact-us form {
-  max-width: 40%;
+  width: 70%;
   background-color: pink;
-  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 40px;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.contact .contact-us form li {
+  padding: 10px 0;
+}
+
+.contact .contact-us form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .contact-us form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .contact-us form button {
+  width: 40%;
+  background-color: var(--prim-color);
+  font-family: var(--ff-third);
+  padding: 14px 20px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30%;
 }
 
 .footer {
