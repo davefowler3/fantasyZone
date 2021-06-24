@@ -242,26 +242,31 @@ nav {
 
     .bio {
         font-family: var(--ff-primary);
+        width: 50%;
 
         h2 {
-            padding-top: 20px;
+            padding: 20px 40px;
             color: black;
             font-size: 3rem;
         }
 
         p {
+            padding: 10px 20px;
             font-family: var(--ff-third);
             font-weight: 100;
+            line-height: 1.5em;
         }
     }
 
     .img-container {
-        background-color: pink;
+        width: 50%;
+        margin-bottom: auto;
 
         img {
+        padding: 0 50px;
         max-width: 100%;
-        max-height: 420px;
-        object-fit: contain;
+        max-height: 100%;
+        object-fit: cover;
         }
     }
 }

@@ -257,28 +257,33 @@ nav .logo .logo-text h5 {
 
 .about .bio {
   font-family: var(--ff-primary);
+  width: 50%;
 }
 
 .about .bio h2 {
-  padding-top: 20px;
+  padding: 20px 40px;
   color: black;
   font-size: 3rem;
 }
 
 .about .bio p {
+  padding: 10px 20px;
   font-family: var(--ff-third);
   font-weight: 100;
+  line-height: 1.5em;
 }
 
 .about .img-container {
-  background-color: pink;
+  width: 50%;
+  margin-bottom: auto;
 }
 
 .about .img-container img {
+  padding: 0 50px;
   max-width: 100%;
-  max-height: 420px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 968px) {
