@@ -387,6 +387,16 @@ nav .logo .logo-text h5 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-weight: 300;
+  line-height: 1.5em;
+}
+
+.footer .footer_content h4 {
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+}
+
+.footer .footer_content .social {
+  padding-top: 20px;
 }
 
 .footer .copyright {

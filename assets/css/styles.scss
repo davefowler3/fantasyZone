@@ -352,6 +352,16 @@ nav {
         flex-direction: row;
         justify-content: space-around;
         font-weight: 300;
+        line-height: 1.5em;
+
+        h4 {
+            font-family: var(--ff-primary);
+            font-size: 1.5rem;
+        }
+
+        .social {
+            padding-top: 20px;
+        }
     }
 
     .copyright {
