@@ -265,13 +265,13 @@ nav .logo .logo-text h5 {
 }
 
 .about .bio h2 {
-  padding: 20px 40px;
+  padding: 20px 30px;
   color: black;
   font-size: 3rem;
 }
 
 .about .bio p {
-  padding: 10px 20px;
+  padding: 0 30px;
   font-family: var(--ff-third);
   font-weight: 100;
   line-height: 1.5em;
