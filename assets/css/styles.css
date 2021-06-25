@@ -416,4 +416,22 @@ nav .logo .logo-text h5 {
   text-align: center;
   font-size: 1em;
 }
+
+@media screen and (max-width: 425px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer_content .hours {
+    margin-top: 40px;
+  }
+  .footer .copyright {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

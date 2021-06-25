@@ -383,3 +383,21 @@ nav {
         font-size: 1em;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .footer {
+        text-align: center;
+
+        .footer_content {
+            flex-direction: column;
+
+            .hours {
+                margin-top: 40px;
+            }
+        }
+
+        .copyright {
+            margin-top: 20px;
+        }
+    }
+}
