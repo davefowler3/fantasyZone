@@ -244,6 +244,12 @@ nav .logo .logo-text h5 {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .buttons .info p {
+    font-size: 1.2rem;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;

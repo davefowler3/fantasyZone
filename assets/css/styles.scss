@@ -231,6 +231,16 @@ nav {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .buttons {
+        .info {
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
 .about {
     display: flex;
     background-color: var(--prim-color);
@@ -351,6 +361,7 @@ nav {
         }
     }
 }
+
 .footer {
     background-color: var(--prim-color);
     font-family: var(--ff-secondary);
