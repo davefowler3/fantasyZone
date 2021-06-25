@@ -95,12 +95,16 @@ nav .logo .logo-text h5 {
   }
   .lame-sm {
     text-align: center;
-    padding-top: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
   }
   .lame-sm h4 {
     font-family: var(--ff-secondary);
     color: black;
     font-weight: 900;
+    font-size: 2rem;
     visibility: visible;
   }
 }
@@ -227,6 +231,12 @@ nav .logo .logo-text h5 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .buttons .info h4 {
+    font-size: 3rem;
+  }
+  .buttons .info p {
+    font-size: 1.4rem;
+  }
   .buttons .info .image {
     width: 300px;
     height: 300px;
@@ -284,6 +294,12 @@ nav .logo .logo-text h5 {
   .about .bio {
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
+  }
+  .about .bio p {
+    font-size: 1.2rem;
+    padding: 0 20px;
+    font-weight: 300;
   }
   .img-container {
     display: none;

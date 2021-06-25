@@ -89,12 +89,14 @@ nav {
 
     .lame-sm {
         text-align: center;
-        padding-top: 5px;
+        align-items: center;
+        padding: 20px 0;
         
         h4 {
             font-family: var(--ff-secondary);
             color: black;
             font-weight: 900;
+            font-size: 2rem;
             visibility: visible;
         }
     }
@@ -211,6 +213,14 @@ nav {
 
         .info {
             flex-direction: column;
+
+            h4 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
         
             .image {
                 width: 300px;
@@ -264,6 +274,13 @@ nav {
         .bio {
             width: 100%;
             text-align: center;
+            padding-bottom: 20px;
+
+            p {
+                font-size: 1.2rem;
+                padding: 0 20px;
+                font-weight: 300;
+            }
         }
     }
 
