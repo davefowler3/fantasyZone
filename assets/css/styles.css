@@ -178,13 +178,13 @@ nav .logo .logo-text h5 {
   }
 }
 
-.info {
+.buttons {
   background-color: white;
   text-align: center;
   padding: 50px 20px;
 }
 
-.info .info {
+.buttons .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,20 +195,20 @@ nav .logo .logo-text h5 {
   padding-bottom: 2%;
 }
 
-.info .info h4 {
+.buttons .info h4 {
   font-size: 2rem;
   font-family: var(--ff-primary);
   color: black;
 }
 
-.info .info p {
+.buttons .info p {
   color: black;
   font-size: .75rem;
   font-weight: 300;
   margin-bottom: 15px;
 }
 
-.info .info .image {
+.buttons .info .image {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -217,31 +217,19 @@ nav .logo .logo-text h5 {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1000px) {
-  .info .info {
-    padding: 0;
+@media screen and (max-width: 768px) {
+  .buttons {
+    padding-bottom: 0px;
   }
-}
-
-@media screen and (max-width: 980px) {
-  .info .info {
+  .buttons .info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
   }
-  .info .info h5 {
-    font-size: 2rem;
-  }
-  .info .info p {
-    font-size: 1rem;
-  }
-  .info .info .image {
+  .buttons .info .image {
     width: 300px;
     height: 300px;
-  }
-  .info div {
     margin-bottom: 40px;
   }
 }
@@ -293,8 +281,12 @@ nav .logo .logo-text h5 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about .about-img {
-    max-width: 100%;
+  .about .bio {
+    width: 100%;
+    text-align: center;
+  }
+  .img-container {
+    display: none;
   }
 }
 
@@ -397,6 +389,10 @@ nav .logo .logo-text h5 {
 
 .footer .footer_content .social {
   padding-top: 20px;
+}
+
+.footer .footer_content #map {
+  height: 100%;
 }
 
 .footer .copyright {

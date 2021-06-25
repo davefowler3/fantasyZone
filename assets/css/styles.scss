@@ -170,7 +170,7 @@ nav {
     }
 }
 
-.info {
+.buttons {
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 50px 20px;
@@ -203,34 +203,20 @@ nav {
             margin-bottom: 20px;
         }
     }
+}
 
-    @media screen and (min-width: 1000px) {
-        .info {
-           padding: 0;
-        }
-    }
+@media screen and (max-width: 768px){
+    .buttons {
+        padding-bottom: 0px;
 
-    @media screen and (max-width:980px) {
         .info {
             flex-direction: column;
-            height: auto;
-
-            h5 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
+        
             .image {
                 width: 300px;
                 height: 300px;
+                margin-bottom: 40px;
             }
-        }
-    
-        div {
-            margin-bottom: 40px;
         }
     }
 }
@@ -275,9 +261,15 @@ nav {
     .about {
         flex-direction: column;
 
-        .about-img {
-            max-width: 100%;
+        .bio {
+            width: 100%;
+            text-align: center;
         }
+    }
+
+    .img-container {
+        display: none;
+        
     }
 }
 
@@ -361,6 +353,10 @@ nav {
 
         .social {
             padding-top: 20px;
+        }
+
+        #map {
+            height: 100%;
         }
     }
 
