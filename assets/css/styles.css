@@ -207,9 +207,9 @@ nav .logo .logo-text h5 {
 
 .buttons .info p {
   color: black;
-  font-size: .75rem;
+  font-size: .85rem;
   font-weight: 300;
-  margin-bottom: 15px;
+  margin: 10px;
 }
 
 .buttons .info .image {
