@@ -120,15 +120,16 @@
     <section class="contact" id="contact">
         <div class="contact-us">
             <h4>Contact Us</h4>
-            <form action="/form" method="post">
+            <form action="https://formsubmit.co/fzcomics@verizon.net" method="POST">
                 <ul>
                  <li>
                    <label for="name">Name:</label>
-                   <input type="text" id="name" name="user_name">
+                   <input type="text" id="name" name="name" required>
+                   <input type="hidden" name="_next" value="#">
                  </li>
                  <li>
                    <label for="mail">E-mail:</label>
-                   <input type="email" id="mail" name="user_email">
+                   <input type="email" id="mail" name="email" required>
                  </li>
                  <li>
                    <label for="msg">Message:</label>
