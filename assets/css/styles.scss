@@ -21,7 +21,7 @@ nav {
     font-family: var(--ff-primary);
 
     ul {
-        margin-top: 30px;
+        margin-top: 10px;
         width: 30%;
         font-size: 1.5rem;
         display: flex;
@@ -63,6 +63,14 @@ nav {
                 text-align: end;
             }
         }
+
+        .hamburger {
+            display: none;
+        }
+
+        .close {
+            display: none;
+        }
     }
 }
 
@@ -102,25 +110,11 @@ nav {
     }
 }
 
-.hamburger {
-    display: none;
-}
-
 @media screen and (max-width: 768px) {
-    .hamburger {
-       display: block;
-       align-self: flex-end;
-       border: 0;
-       background-color: transparent;
-       color: black;
-       font-size: 20px;
-       margin: 20px;
-    }
-
     nav {
         display: flex;
-        flex-direction: column-reverse;
-        align-self: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
 
         ul {
             display: none;
@@ -129,15 +123,82 @@ nav {
         }
 
         .logo {
-           display: none;
+            width: 100%;
+            padding: 0 20px;
+            justify-content: space-between;
+
+           .smiley  {
+               display: none;
+           }
+
+           .logo-text {
+            margin-top: -20px;
+            padding: 10px 0;
+           }
+
+           .hamburger {
+            display: block;
+            align-self: flex-end;
+            border: 0;
+            background-color: transparent;
+            color: black;
+            font-size: 20px;
+            margin-bottom: 30px;
+           }
+
+        //    .close {
+        //     display: block;
+        //     align-self: flex-end;
+        //     border: 0;
+        //     background-color: transparent;
+        //     color: black;
+        //     font-size: 40px;
+        //     margin-bottom: 30px;
+        //     }
+        }
+
+        .nav-list {
+            margin-top: 10px;
+        }
+
+        ul.show {
+            background-color: #fdfdfd;
+            display: block;
+            font-size: 3.5rem;
+            align-self: flex-start;
+            padding: 25px 40px;
+            width: 100%;
         }
     }
+}
 
-    ul.show {
-        display: block;
-        font-size: 3.5rem;
-        align-self: flex-start;
-        padding: 50px 40px;
+@media screen and (max-width: 425px) {
+    nav {
+        .logo {
+            .logo-text {
+                display: flex;
+                flex-direction: row;
+                width: 85%;
+                margin-top: 0;
+
+                h2 {
+                    margin-top: 0;
+                    padding-top: 10px;
+                    padding-right: 5px;
+                    font-size: 2rem;
+                }
+
+                h5 {
+                    display: none;
+                }
+            }
+
+            .hamburger {
+                font-size: 15px;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 

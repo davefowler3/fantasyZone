@@ -29,7 +29,7 @@ nav {
 }
 
 nav ul {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 30%;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -75,6 +75,14 @@ nav .logo .logo-text h5 {
   text-align: end;
 }
 
+nav .logo .hamburger {
+  display: none;
+}
+
+nav .logo .close {
+  display: none;
+}
+
 .lame-sm {
   background-color: var(--prim-color);
   padding-bottom: 5px;
@@ -109,31 +117,18 @@ nav .logo .logo-text h5 {
   }
 }
 
-.hamburger {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    border: 0;
-    background-color: transparent;
-    color: black;
-    font-size: 20px;
-    margin: 20px;
-  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   nav ul {
     display: none;
@@ -141,14 +136,68 @@ nav .logo .logo-text h5 {
     font-size: 2.5rem;
   }
   nav .logo {
+    width: 100%;
+    padding: 0 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .logo .smiley {
     display: none;
   }
-  ul.show {
+  nav .logo .logo-text {
+    margin-top: -20px;
+    padding: 10px 0;
+  }
+  nav .logo .hamburger {
+    display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    border: 0;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  nav .nav-list {
+    margin-top: 10px;
+  }
+  nav ul.show {
+    background-color: #fdfdfd;
     display: block;
     font-size: 3.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    padding: 50px 40px;
+    padding: 25px 40px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav .logo .logo-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 85%;
+    margin-top: 0;
+  }
+  nav .logo .logo-text h2 {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-right: 5px;
+    font-size: 2rem;
+  }
+  nav .logo .logo-text h5 {
+    display: none;
+  }
+  nav .logo .hamburger {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
   }
 }
 
