@@ -46,14 +46,14 @@
                     <h2>Fantasy Zone Comics</h2>
                     <h5>& Used Books</h5>
                 </div>
-                <button class="hamburger" id="hamburger">
+                <button aria-label="menu" class="hamburger" id="hamburger">
                     <i class="fas fa-bars fa-2x"></i>
                 </button>
                 <!-- <button class="close" id="close">
                     <i class="fas fa-times"></i>
                 </button> -->
             </div>
-            <ul id="nav-list">
+            <ul id="nav-list" aria-label="Primary links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -62,7 +62,7 @@
     </section>
 
     <!-- Slogan -->
-    <section class="main">
+    <section class="main" aria-label="Image of comic shop and slogan">
         <div class="lame">
             We're not 
             <br />
@@ -74,17 +74,17 @@
     </div>
 
     <!-- Info Buttons -->
-    <section class="buttons" id="info">
+    <section class="buttons" id="info" aria-label="Shop services">
         <div class="info">
             <div>
                 <h4>Comics</h4>
                 <p>New releases & back issues!</p>
-                <img class="image" src="assets/imgs/comics.jpg">
+                <img class="image" src="assets/imgs/comics.jpg" alt="Reading a comic book">
             </div>
             <div>
                 <h4>Subscription Services</h4>
                 <p>Never miss an issue!</p>
-                <img class="image" src="assets/imgs/envelopes.jpg">
+                <img class="image" src="assets/imgs/envelopes.jpg" alt="Subscription comic services.">
             </div>
             <div>
                 <h4>Used Books</h4>
@@ -100,7 +100,7 @@
     </section>
 
     <!-- About  -->
-    <section class="about" id="about">
+    <section class="about" id="about" aria-label="About the shop">
         <div class="bio">
             <h2>About Us</h2>
             <p>
@@ -113,31 +113,31 @@
             </p>
         </div>
         <div class="img-container">
-            <img src="assets/imgs/IMG_4068.jpg">
+            <img src="assets/imgs/IMG_4068.jpg" alt="Comics on a shelf inside the store.">
         </div>
     </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" aria-label="Contact">
         <div class="contact-us">
             <h4>Contact Us</h4>
             <form action="https://formsubmit.co/fzcomics@verizon.net" method="POST">
                 <ul>
                  <li>
                    <label for="name">Name:</label>
-                   <input type="text" id="name" name="name" required>
+                   <input type="text" id="name" name="name" required aria-label="Your name">
                    <input type="hidden" name="_next" value="#">
                  </li>
                  <li>
                    <label for="mail">E-mail:</label>
-                   <input type="email" id="mail" name="email" required>
+                   <input type="email" id="mail" name="email" required aria-label="Your email">
                  </li>
                  <li>
                    <label for="msg">Message:</label>
-                   <textarea id="msg" name="user_message"></textarea>
+                   <textarea id="msg" name="user_message" aria-label="Your message"></textarea>
                  </li>
                  <li class="button">
-                    <button type="submit">Submit</button>
+                    <button type="submit" aria-label="Submit message">Submit</button>
                  </li>
                 </ul>
             </form>
@@ -145,7 +145,7 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer" id="footer">
+    <section class="footer" id="footer" aria-label="Footer">
         <div class="footer_content">
             <div class="address">
                 <h4>Fantasy Zone Comics</h4>
@@ -170,8 +170,8 @@
                     </ul>
                 </p>
                 <div class="social">
-                    <a href="#/"><img src="assets/imgs/ebay.svg" height="40" alt=">Icons made by Freepik www.flaticon.com"></a>
-                    <a href=""><img src="assets/imgs/facebook.svg" height="40" alt=">Icons made by Freepik www.flaticon.com"></a>
+                    <a href="https://www.ebay.com/str/fantasyzonecomics" target="blank"><img src="assets/imgs/ebay.svg" height="40" alt="Ebay Icons made by Freepik www.flaticon.com"></a>
+                    <a href="https://www.facebook.com/Fantasy-Zone-Comics-and-Used-Books-126052654078428/" target="blank"><img src="assets/imgs/facebook.svg" height="40" alt="Facebook Icons made by Freepik www.flaticon.com"></a>
                 </div>
             </div>
         </div>
